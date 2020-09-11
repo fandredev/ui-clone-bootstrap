@@ -3,7 +3,6 @@ import { fullCenter } from "../../global/utils";
 
 export const Container = styled.footer`
   ${fullCenter};
-  padding: 2.5rem;
   text-align: center;
   background: var(--footer-bg);
   @media (min-width: 580px) {

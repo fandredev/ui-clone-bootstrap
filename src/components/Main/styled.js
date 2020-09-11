@@ -99,7 +99,7 @@ export const Container = styled.main`
       }
     }
     > section {
-      width: 90%;
+      width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
