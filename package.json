@@ -3,9 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-react": "^7.10.4",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "babel-loader": "^8.1.0",
     "bootstrap-icons": "^1.0.0",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
@@ -14,12 +18,23 @@
     "react-icons": "^3.11.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
-    "styled-components": "^5.2.0"
+    "styled-components": "^5.2.0",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "author": {
+    "email": "profissionalf.andre@gmail.com",
+    "name": "Felipe André",
+    "url": "https://github.com/flubyGit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/flubyGit/ui-clone-bootstrap"
   },
   "scripts": {
     "start": "react-scripts start",
     "dev": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "webpack",
+    "dev-server": "webpack-dev-server",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -39,6 +54,7 @@
     ]
   },
   "devDependencies": {
+    "css-loader": "^4.3.0",
     "eslint": "^6.6.0",
     "eslint-config-airbnb": "^18.2.0",
     "eslint-config-prettier": "^6.11.0",
@@ -47,9 +63,15 @@
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.20.6",
     "eslint-plugin-react-hooks": "^4.1.2",
+    "file-loader": "^6.1.0",
+    "html-loader": "^1.3.0",
+    "html-webpack-plugin": "^4.4.1",
     "husky": "^4.3.0",
     "lint-staged": "^10.3.0",
-    "prettier": "^2.1.1"
+    "prettier": "^2.1.1",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
   },
   "husky": {
     "hooks": {
